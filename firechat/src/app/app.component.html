@@ -1,0 +1,30 @@
+<div class="row columns">
+
+<div class="imagewrap">
+    <img class="image" src="https://media.giphy.com/media/eez4RqwdHz7EY/giphy.gif" *ngIf="!name">
+    <button class="login" (click)="login()" *ngIf="!name">Login </button>
+</div>
+
+  <button class="logout" (click)="logout()" *ngIf="name">Logout </button>
+
+<div class="down">
+  <input type="text" style="width:800px" id="message" *ngIf="name" placeholder="Chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal" />
+
+    <div class="demo" *ngIf="name">
+    <div class="chat-container" *ngFor="let item of items | async ">
+             <a href="#">{{item.name}}</a>
+             <div class="row">
+               <div class="col">
+                    <img class="profpic" src="{{item.url}}">   
+               </div>
+               <div class="col" style="width:20px">
+                      
+               </div>
+               <div class="col col-md-auto">
+                  <p style="border-radius: 25px"> {{item.message}}</p>
+               </div>
+             </div>
+   </div>
+    </div>
+</div>
+</div>

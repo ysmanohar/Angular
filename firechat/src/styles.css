@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color:black;
+}
+* {
+    font-family: 'Raleway';
+}
+
+.login {
+    padding: 1.2em;
+    font-size:1.2em;
+    color:white;
+    width:100px;
+    text-align:center;
+}
+
+.image {
+  height: 650px;
+  width: 1500px;
+}
+
+.logout{
+    border-radius: 25px;
+    padding: 1.2em;
+    font-size:1.2em;
+    background:firebrick;
+    color:white;
+    width:100px;
+    text-align:center;
+}
+
+.profpic{
+    padding-top: 4px;
+    border-radius: 25px;
+    width:50px;
+    height:50px;
+}
+
+.imagewrap {display:inline-block;position:relative;}
+
+.login {position:absolute;right:45%;top:22%;}
+
+.logout {position:absolute;right:10%;top:5%;}
+
+.down {padding-top: 2cm;}
